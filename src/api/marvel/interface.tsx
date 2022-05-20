@@ -1,54 +1,54 @@
-interface Url {
+export interface Url {
   type: string
   url: string
 }
-interface Image {
+export interface Image {
   path: string
   extension: string
 }
-interface ComicSummary {
+export interface ComicSummary {
   resourceURI: string
   name: string
 }
-interface ComicList {
+export interface ComicList {
   available: number
   returned: number
   collectionURI: string
   items: ComicSummary[]
 }
-interface StorySummary {
+export interface StorySummary {
   resourceURI: string
   name: string
   type: string
 }
-interface StoryList {
+export interface StoryList {
   available: number
   returned: number
   collectionURI: string
   items: StorySummary[]
 }
-interface EventSummary {
+export interface EventSummary {
   resourceURI: string
   name: string
 }
-interface EventList {
+export interface EventList {
   available: number
   returned: number
   collectionURI: string
   items: EventSummary[]
 }
-interface SeriesSummary {
+export interface SeriesSummary {
   resourceURI: string
   name: string
 }
-interface SeriesList {
+export interface SeriesList {
   available: number
   returned: number
   collectionURI: string
   items: SeriesSummary[]
 }
 
-interface Character {
+export interface Character {
   id: number
   name: string
   description: string
@@ -61,7 +61,7 @@ interface Character {
   events: EventList
   series: SeriesList
 }
-interface CharacterDataContainer {
+export interface CharacterDataContainer {
   offset: number
   limit: number
   total: number
