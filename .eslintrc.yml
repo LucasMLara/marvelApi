@@ -16,3 +16,9 @@ plugins:
 rules: 
     require-jsdoc: 0
     no-console: 0
+settings:
+  {
+    react: {
+      version: detect
+    }
+  }
