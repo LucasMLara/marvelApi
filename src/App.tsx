@@ -1,9 +1,12 @@
-import { useEffect } from 'react';
+import React from 'react';
+import {useEffect} from 'react';
 
-import { axiosClient } from './api/marvel';
+import {characters} from './api/marvel';
 
 function App() {
-  useEffect(() => axiosClient.get('characters').then(console.log), []);
+  useEffect(() => {
+    characters().then(console.log);
+  }, []);
 
   return (
     <h1>alo</h1>

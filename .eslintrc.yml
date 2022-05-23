@@ -3,7 +3,7 @@ env:
   es2021: true
 extends:
   - plugin:react/recommended
-  - airbnb
+  - google
 parser: '@typescript-eslint/parser'
 parserOptions:
   ecmaFeatures:
@@ -13,12 +13,5 @@ parserOptions:
 plugins:
   - react
   - '@typescript-eslint'
-rules: 
-    require-jsdoc: 0
-    no-console: 0
-settings:
-  {
-    react: {
-      version: detect
-    }
-  }
+rules:
+  require-jsdoc: 0

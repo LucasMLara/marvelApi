@@ -1,12 +1,12 @@
-import { axiosClient } from './config';
-import { CharacterDataWrapper } from './interface';
+import {axiosClient} from './config';
+import {CharacterDataWrapper} from './interface';
 
 export * from './interface';
 
 export async function characters() {
   try {
     const response = await axiosClient.get<CharacterDataWrapper>(
-      '/characters',
+        '/characters',
     );
     return response.data;
   } catch (error) {
